@@ -2,8 +2,8 @@
   "private": true,
   "author": "Yunpeng Miao <yunpengmiao@hcdatainc.com>",
   "scripts": {
-    "dev": "max dev",
-    "build": "max build",
+    "dev": "cross-env NODE_ENV=development max dev",
+    "build": "cross-env NODE_ENV=production max build",
     "format": "prettier --cache --write .",
     "prepare": "husky install",
     "postinstall": "max setup",
@@ -19,6 +19,7 @@
   "devDependencies": {
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
+    "cross-env": "^7.0.3",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",

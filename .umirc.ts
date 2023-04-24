@@ -97,7 +97,7 @@ export default defineConfig({
       }
       `
   ],
-  publicPath: './',
+  publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
   history: {
     type: 'hash'
   }
