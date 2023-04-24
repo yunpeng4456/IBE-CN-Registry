@@ -1,0 +1,30 @@
+@import '@/assets/styles/global';
+
+.top-nav-container {
+  background: white;
+  padding: 0 32px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+  .trigger {
+    font-size: 20px;
+  }
+
+  .user-avatar {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: $primary-color;
+    padding: 0 10px;
+    overflow: hidden;
+
+    &:hover {
+      background: #ded9d2;
+    }
+  }
+}

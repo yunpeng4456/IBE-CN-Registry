@@ -1,0 +1,47 @@
+@import '@/assets/styles/global';
+
+.logo {
+  height: 64px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 0 24px;
+
+  span {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+
+  .title {
+    flex: 1;
+    opacity: 1;
+    transition: opacity 1s ease;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+.ant-menu-title-content {
+  color: white;
+}
+
+.ant-menu-submenu.ant-menu-submenu-selected {
+  .ant-menu-title-content, .ant-menu-item-icon{
+    color: $primary-color;
+  }
+  .ant-menu-item .ant-menu-title-content{
+    color: white;
+  }
+}
+
+.ant-menu.ant-menu-root .ant-menu-item.ant-menu-item-selected {
+  border-radius: 0;
+  background-color: $primary-color;
+}
+
+.menus-drawer {
+  .ant-drawer-body {
+    padding: 0;
+    background: $dark-color;
+  }
+}

@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+}
+
+.layout {
+  height: 100vh;
+}
+
+.site-layout {
+  height: calc( 100vh -  48px);
+  overflow-y: auto;
+}
